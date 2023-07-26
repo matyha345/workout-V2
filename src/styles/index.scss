@@ -1,0 +1,168 @@
+
+@import './variables';
+@import './reset';
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	font-family: $default-font;
+	letter-spacing: 0.5px;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: $bgGlobal;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+	font-size: 20px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	overflow-x: hidden;
+}
+#root {
+	height: 100%;
+}
+
+*::-webkit-input-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #c0c0c0;
+	opacity: 1;
+}
+
+img {
+	max-width: 100%;
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+.error {
+	color: #8d2b3d;
+	font-size: 1rem;
+}
+
+
+
+
+.select2-selection {
+	&__control {
+		cursor: pointer !important;
+		margin-bottom: 2rem;
+		border-radius: 10px !important;
+		min-height: 48px !important;
+		background-color: $white !important;
+		border: 1px solid transparent !important;
+		color: #BABABA;
+		font-size: 18px;
+		width: 100%;
+		padding: 3.7px 0;
+		&--is-focused {
+			border-color: transparent !important;
+			box-shadow: 0 0 0 1px rgba($colorText, 0.3) !important;
+		}
+	}
+
+	&__menu {
+		background-color: $bgGlobal !important;
+		border-radius: 10px !important;
+
+		&-list {
+			padding: 0 !important;
+			border-radius: 10px !important;
+		}
+
+		&-notice {
+			color: #946e86 !important;
+		}
+	}
+
+	&__option {
+		&--is-focused {
+			background-color: $purple!important;
+		}
+		&--is-selected {
+			background-color: darken($bgGlobal, 8%) !important;
+		}
+	}
+
+	&__indicator,
+	&__indicator:hover {
+		color: $bgGlobal !important;
+	}
+
+	&__placeholder {
+		color: $bgGlobal !important;
+		margin-left: 6px !important;
+		text-align: left;
+	}
+
+	&__single-value {
+		color: $bgGlobal !important;
+	}
+
+	&__multi-value {
+		border-radius: 6px !important;
+		background-color: lighten($colorText, 10%) !important;
+
+		&__label {
+			color: $bgGlobal !important;
+		}
+
+		&__remove:hover {
+			background-color:lighten($bgGlobal, 10%) !important;
+			color: $bgGlobal !important;
+		}
+	}
+
+	&__input {
+		color: $bgGlobal !important;
+	}
+}

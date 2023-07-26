@@ -1,0 +1,33 @@
+@import 'src/styles/variables';
+
+.wrapper {
+	width: 100%;
+	padding: 10px 50px;
+	.input {
+		background-color: $white; 
+		border: 1px solid transparent;
+		color: $bgGlobal;
+		font-size: 16px;
+		padding: 14px 35px 14px 14px;
+		border-radius: 10px;
+		margin-bottom: 0.7rem;
+		outline: none;
+		width: 100%;
+		position: relative;
+
+		
+		&:focus {
+			border-color: $white;
+		}
+
+		&::placeholder {
+			color: #bababa;
+		}
+	}
+
+	.error {
+		color: red;
+		font-size: 0.8rem;
+		margin-top: 0.2rem;
+	}
+}

@@ -1,0 +1,8 @@
+@import 'src/styles/variables';
+
+@mixin h1Title {
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 120%;
+}

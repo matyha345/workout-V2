@@ -1,0 +1,17 @@
+@import 'src/styles/variables.scss';
+
+.btn {
+	display: flex;
+	align-items: center;
+    transition: all .3s ease-in-out;
+    color: #BDBDBD;
+    font-size: 16px;
+
+    svg{
+        margin-right: 10px;
+    }
+	&:hover {
+        color: $colorText;
+	}
+
+}
