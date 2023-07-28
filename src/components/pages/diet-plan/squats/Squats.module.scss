@@ -1,0 +1,24 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+@import 'include-media';
+
+.bgLink {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #808191;
+}
+
+.wrapper {
+	margin-top: 10px;
+	margin-bottom: 30px;
+	font-size: 16px;
+	border-radius: 10px 10px 10px 10px;
+	color: #e0f0ff;
+	backdrop-filter: blur(10px);
+	@include textTitle;
+
+	.accordion {
+		padding: 20px;
+	}
+}

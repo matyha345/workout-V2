@@ -6,10 +6,8 @@ import Button from '../../ui/button/Button'
 
 import SwiperElement from '../../ui/swiper/SwiperElement'
 import { categoriesDataSlider } from '../../ui/swiper/swiper-data/categories.data'
-
-import { planDataSlider } from '../../ui/swiper/swiper-data/plan.data'
-
 import styles from './Home.module.scss'
+import Statistics from '../profile/statistics/Statistics'
 
 
 const Home = () => {
@@ -28,19 +26,20 @@ const Home = () => {
 						<SwiperElement
 							dataMap={categoriesDataSlider}
 							keyIndex={`_categor_`}
-							slidesPerViewCol={3.5}
+							slidesPerViewCol={2.5}
 							spaceBetweenCol={22}
 						/>
 					</div>
 
 					<div className={styles.categories}>
-						<p className={styles.titleCat}>Categories</p>
-						<SwiperElement
+						<p className={styles.titleCat}>Статистика</p>
+					<Statistics />
+						{/* <SwiperElement
 							dataMap={planDataSlider}
 							keyIndex={`_plan`}
-							slidesPerViewCol={4.5}
+							slidesPerViewCol={2.5}
 							spaceBetweenCol={9}
-						/>
+						/> */}
 					</div>
 					<div className={styles.btn} onClick={() => nav('/new-workouts')}>
 						<Button>Новая тренировка</Button>

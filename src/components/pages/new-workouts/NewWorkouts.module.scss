@@ -1,5 +1,5 @@
 @import 'src/styles/variables.scss';
-
+@import 'include-media';
 .wrapper {
 	width: 100%;
 	height: 100%;
@@ -31,6 +31,9 @@
             &:hover{
                 color: $colorText;
             }
+			@include media('>=phone', '<=480px') {
+				font-size: 14px;
+			}
 		}
 		.select {
 			padding: 0 50px;

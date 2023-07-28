@@ -1,17 +1,13 @@
 @import 'src/styles/variables';
 @import 'src/styles/mixins';
-
-
-.bgLink{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+@import 'include-media';
 
 .wrapper {
 	margin-top: 10px;
+    
 
 	.content {
+
 		.titleText {
 			text-align: center;
 			@include textTitle;
@@ -34,10 +30,17 @@
 
             .cardPlan{
                 display: flex;
+                align-items: center;
                 padding: 20px;
-
+                @include media('>=phone', '<=480px') {
+                    flex-direction: column;
+                    align-items: start;
+                }
                 .blokImg{
-                    
+                    cursor: pointer;
+                    @include media('>=phone', '<=480px') {
+                        padding: 10px;
+                    }
                     img{
                         border-radius: 5px;
                     }

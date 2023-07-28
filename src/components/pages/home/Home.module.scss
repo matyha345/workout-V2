@@ -1,5 +1,5 @@
 @import 'src/styles/variables.scss';
-
+@import 'include-media';
 .wrapper {
 	padding: 45px 0;
 
@@ -48,6 +48,10 @@
 			display: flex;
 			justify-content: center;
 			margin-top: 100px;
+
+			@include media('<=480px'){
+				margin-top: 30px;
+			}
 		}
 	}
 }

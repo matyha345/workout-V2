@@ -1,0 +1,25 @@
+
+
+#productCarousel,
+.f-thumbs.is-classic,
+.fancybox__toolbar,
+.fancybox__nav {
+    padding: 10px;
+  --f-button-width: 40px;
+  --f-button-height: 40px;
+  --f-button-border-radius: 4px;
+
+  --f-button-color: #616AEE;
+  --f-button-hover-color: var(--f-brand-color);
+
+  --f-button-bg: #fff50a;
+  --f-button-hover-bg: #053778;
+  --f-button-active-bg: #616AEE;
+
+  --f-button-svg-width: 20px;
+  --f-button-svg-height: 20px;
+  --f-button-svg-stroke-width: 2.25;
+  --f-button-svg-filter: none;
+
+  --f-button-svg-disabled-opacity: 0.2;
+}

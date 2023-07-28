@@ -1,13 +1,12 @@
 @import 'src/styles/variables';
+@import 'include-media';
 
-
-
-.bkLink{
+.bkLink {
 	display: flex;
 	align-items: flex-start;
 	margin-left: 30px;
 	max-width: 50px;
-	&:hover{
+	&:hover {
 		color: $colorText;
 	}
 }
@@ -23,6 +22,10 @@
 		align-items: center;
 		// justify-content: center;
 		margin-top: 40px;
+
+		@include media('<=460px'){
+			margin-top: 0;
+		}
 
 		.exercise {
 			width: 100%;
@@ -46,6 +49,9 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
+				@include media('<=480px') {
+					margin-bottom: 10px;
+				}
 			}
 		}
 		.iconPath {
@@ -54,7 +60,12 @@
 			justify-content: center;
 			margin-top: 0.7rem;
 			margin-bottom: 2rem;
-
+			@include media('<=480px') {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				justify-items: center;
+				margin-bottom: 0.5rem;
+			}
 			> img {
 				width: 86px;
 				margin: 0 0.5rem;
@@ -63,7 +74,9 @@
 				padding-bottom: 0.5rem;
 				transition: border-bottom 0.4s ease;
 				opacity: 0.7;
-
+				@include media('<=480px') {
+					width: 40px;
+				}
 				&.active {
 					opacity: 1;
 					border-color: $colorText;

@@ -1,5 +1,5 @@
 @import 'src/styles/variables';
-
+@import 'include-media';
 .wrapper {
 	display: flex;
 	align-items: center;
@@ -16,6 +16,10 @@
 		.heading {
 			color: $colorText;
 			text-transform: capitalize;
+
+			@include media('<=460px'){
+				font-size: 15px;
+			}
 		}
 
 		.number {

@@ -12,6 +12,10 @@ import Workout from '../components/pages/workout/Workout'
 import ListWorkouts from '../components/pages/list-workouts/ListWorkouts'
 import ExerciseLog from '../components/pages/exercise-log/ExerciseLog'
 import Jogging from '../components/pages/diet-plan/jogging/Jogging'
+import Squats from '../components/pages/diet-plan/squats/Squats'
+import PushUp from '../components/pages/diet-plan/push-up/PushUp'
+import BenchPress from '../components/pages/diet-plan/bench-press/BenchPress'
+import Yoga from '../components/pages/diet-plan/yoga/Yoga'
 
 
 export const routes = [
@@ -73,5 +77,25 @@ export const routes = [
 		path: '/run-page',
 		component: Jogging,
 		isAuth: true
-	}
+	},
+	{
+		path: '/squats',
+		component: Squats,
+		isAuth: true
+	},
+	{
+		path: '/push-up',
+		component: PushUp,
+		isAuth: true
+	},
+	{
+		path: '/bench-press',
+		component: BenchPress,
+		isAuth: true
+	},
+	{
+		path: '/yoga',
+		component: Yoga,
+		isAuth: true
+	},
 ]

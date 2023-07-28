@@ -2,8 +2,7 @@ import img1 from './images/fithess.jpg'
 import img2 from './images/gym.jpg'
 import img3 from './images/jogging.jpg'
 import img4 from './images/push-up.jpg'
-import img5 from './images/trainers.jpg'
-import img6 from './images/unsplash.jpg'
+
 import img7 from './images/yoga.jpg'
 
 export const categoriesDataSlider = [
@@ -13,33 +12,23 @@ export const categoriesDataSlider = [
         link: '/run-page'
     },
     {
-        name: 'Отжимание',
-        img: img2,
-        link: ''
-    },
-    {
         name: 'Приседания',
         img: img1,
-        link: ''
+        link: '/squats'
     },
     {
-        name: 'Йога',
+        name: 'Отжимание',
         img: img4,
-        link: ''
+        link: '/push-up'
     },
     {
-        name: 'Фитнес',
-        img: img5,
-        link: ''
+        name: 'Жим',
+        img: img2,
+        link: '/bench-press'
     },
     {
-        name: 'Аэробика',
-        img: img6,
-        link: ''
-    },
-    {
-        name: 'Тренеры',
+        name: 'йога',
         img: img7,
-        link: ''
+        link: '/yoga'
     },
 ]
