@@ -19,7 +19,7 @@ const SelectExercises = ({ control }) => {
 				
 				<ReactSelect
 					classNamePrefix='select2-selection'
-					placeholder='Упражнения...'
+					placeholder='Выбрать упражнения...'
 					title='Exercises'
 					options={data.map(exercise => ({
 						value: exercise.id,

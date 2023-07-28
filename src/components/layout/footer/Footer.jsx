@@ -2,6 +2,7 @@ import styles from './Footer.module.scss'
 
 import { menu } from './menu.data'
 import FooterLink from './FooterLink'
+
 const Footer = () => {
 	return (
 		<section className={styles.wrapper}>

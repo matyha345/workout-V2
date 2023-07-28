@@ -8,31 +8,38 @@ import img7 from './images/yoga.jpg'
 
 export const categoriesDataSlider = [
     {
-        name: 'Jogging',
-        img: img1
+        name: 'Бег',
+        img: img3,
+        link: '/run-page'
     },
     {
-        name: 'Push-up',
-        img: img2
+        name: 'Отжимание',
+        img: img2,
+        link: ''
     },
     {
-        name: 'Squat',
-        img: img3
+        name: 'Приседания',
+        img: img1,
+        link: ''
     },
     {
-        name: 'Yoga',
-        img: img4
+        name: 'Йога',
+        img: img4,
+        link: ''
     },
     {
-        name: 'Fitness',
-        img: img5
+        name: 'Фитнес',
+        img: img5,
+        link: ''
     },
     {
-        name: 'Aerobics',
-        img: img6
+        name: 'Аэробика',
+        img: img6,
+        link: ''
     },
     {
-        name: 'Trainers',
-        img: img7
+        name: 'Тренеры',
+        img: img7,
+        link: ''
     },
 ]

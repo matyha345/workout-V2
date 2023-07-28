@@ -8,31 +8,31 @@ import img7 from './images/yoga.jpg'
 
 export const planDataSlider = [
     {
-        name: 'Trainers',
+        name: 'Тренеры',
         img: img7
     },
     {
-        name: 'Jogging',
+        name: 'Бег',
         img: img1
     },
     {
-        name: 'Push-up',
+        name: 'Отжимание',
         img: img2
     },
     {
-        name: 'Yoga',
+        name: 'Йога',
         img: img4
     },
     {
-        name: 'Squat',
+        name: 'Приседания',
         img: img3
     },
     {
-        name: 'Fitness',
+        name: 'Фитнес',
         img: img5
     },
     {
-        name: 'Aerobics',
+        name: 'Аэробика',
         img: img6
     },
 ]

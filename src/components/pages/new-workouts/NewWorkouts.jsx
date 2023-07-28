@@ -7,8 +7,7 @@ import Button from '../../ui/button/Button'
 import Layout from '../../layout/Layout'
 import Loader from '../../ui/loader/Loader'
 import Alert from '../../ui/alert/Alert'
-import {FiArrowRight} from 'react-icons/fi'
-
+import { FiArrowRight } from 'react-icons/fi'
 
 const NewWorkouts = () => {
 	const {
@@ -28,7 +27,7 @@ const NewWorkouts = () => {
 					{error && <Alert type='error' text={error} />}
 					{isSuccess && <Alert text='Workout created' />}
 					{isLoading && <Loader />}
-					<h1 className={styles.title}>Create New Workout</h1>
+					<h1 className={styles.title}>Создать новую тренировку</h1>
 					<form
 						className={styles.formAndSelect}
 						onSubmit={handleSubmit(onSubmit)}
@@ -45,7 +44,7 @@ const NewWorkouts = () => {
 						/>
 
 						<Link className={styles.link} to={'/new-exercise'}>
-							add new exercise <FiArrowRight />
+							Добавить новое упражнение <FiArrowRight fontSize={30}/>
 						</Link>
 						<div className={styles.select}>
 							<SelectExercises control={control} />
@@ -55,7 +54,7 @@ const NewWorkouts = () => {
 							<div className='error'>{errors?.iconPath?.message}</div>
 						)}
 						<div className={styles.btn}>
-							<Button>Create</Button>
+							<Button>Создать</Button>
 						</div>
 					</form>
 				</div>

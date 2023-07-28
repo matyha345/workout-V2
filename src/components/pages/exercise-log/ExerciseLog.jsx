@@ -10,8 +10,6 @@ import HeaderCompleteExercise from './details-exercise-log/HeaderCompleteExercis
 import Alert from '../../ui/alert/Alert'
 import Loader from '../../ui/loader/Loader'
 import ExerciseError from './ExerciseError'
-import { useUpdateTime } from './hooks/useUpdateTime'
-import { useCompleteLog } from './hooks/useCompleteLog'
 
 const ExerciseLog = () => {
 	const {
@@ -19,25 +17,22 @@ const ExerciseLog = () => {
 		isSuccess,
 		isLoading,
 		nav,
-		times,
-		setTimes,
 		btnOnChangeState,
-		getTimeValue,
 		error,
 		toggleTime,
 		getState
 	} = useExerciseLog()
 
-	
-
 	return (
-		<Layout>
+		<Layout bgImage={'/bgList2.jpeg'}>
 			<Information />
 			<div className={styles.wrapper}>
 				<button
 					className={styles.bgLink}
 					onClick={() =>
-						nav(isSuccess ? `/workout/${exerciseLog.workoutLogId}` : '/workouts')
+						nav(
+							isSuccess ? `/workout/${exerciseLog.workoutLogId}` : '/workouts'
+						)
 					}
 				>
 					<BiArrowBack fontSize={30} />
@@ -51,10 +46,13 @@ const ExerciseLog = () => {
 					<div className={styles.content}>
 						<HeaderCompleteExercise />
 						{exerciseLog?.times.map(item => (
-							<Row getState={getState} 
-                                btnOnChangeState={btnOnChangeState}
-                                toggleTime={toggleTime}
-                            item={item} key={item.id} />
+							<Row
+								getState={getState}
+								btnOnChangeState={btnOnChangeState}
+								toggleTime={toggleTime}
+								item={item}
+								key={item.id}
+							/>
 						))}
 					</div>
 				)}

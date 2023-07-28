@@ -4,13 +4,13 @@ const HeaderCompleteExercise = () => {
 	return (
 		<div className={styles.row}>
 			<div>
-				<span>Previous</span>
+				<span>Предыдущая</span>
 			</div>
 			<div>
-				<span>Repeat & Weight</span>
+				<span>Повторы & вес</span>
 			</div>
 			<div>
-				<span>Completed</span>
+				<span>Завершено</span>
 			</div>
 		</div>
 	)

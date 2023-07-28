@@ -15,7 +15,7 @@ const Profile = () => {
 				</div>
 				<div className={styles.content}>
 					<div className={styles.result}>
-						{data?.images?.slice().reverse().map((image, index) => (
+						{data?.images?.slice().reverse().map((image) => (
 							<div className={styles.resultInner} key={image}>
 								<div className={styles.resultItem}>
 									{/* {index === 1 ? 'Women' : 'Men'} */}

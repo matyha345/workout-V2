@@ -6,16 +6,31 @@
 	.content {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		.link {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			width: 100%;
-			transition: all .3 ease-in-out;
-			&:hover{
-				color: $colorText;
-			}
+			transition: all 0.3 ease-in-out;
+			// border-bottom: 3px transparent solid;
+			position: relative;
+			&.active {
+				position: relative;
 
+				
+				&::after{
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: -10px;
+					width: 100%;
+					height: 3px;
+					background: $colorText;
+					border-radius: 5px;
+
+				}
+			}
 			.text {
 				font-size: 17px;
 				font-style: normal;

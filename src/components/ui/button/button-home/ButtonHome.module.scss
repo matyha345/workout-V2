@@ -1,0 +1,13 @@
+
+
+.bgLink{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &:active{
+        position: relative;
+        top: 1px;
+        left: 0;
+    }
+}

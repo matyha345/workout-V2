@@ -11,6 +11,7 @@ import NewWorkouts from '../components/pages/new-workouts/NewWorkouts'
 import Workout from '../components/pages/workout/Workout'
 import ListWorkouts from '../components/pages/list-workouts/ListWorkouts'
 import ExerciseLog from '../components/pages/exercise-log/ExerciseLog'
+import Jogging from '../components/pages/diet-plan/jogging/Jogging'
 
 
 export const routes = [
@@ -65,6 +66,12 @@ export const routes = [
 	{
 		path: '/exercise/:id',
 		component: ExerciseLog,
+		isAuth: true
+	},
+	//=========DIET-PLAN==========
+	{
+		path: '/run-page',
+		component: Jogging,
 		isAuth: true
 	}
 ]

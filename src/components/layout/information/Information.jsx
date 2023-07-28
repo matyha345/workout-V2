@@ -16,13 +16,13 @@ const Information = ({ pageExercise }) => {
 		<section className={styles.wrapper}>
 			<div className={styles.text}>
 				<h1 className={styles.title}>
-					{pathname == `/workout/${id}` ? <RxAvatar fontSize={30}/> : 'Hello' }
+					{pathname == `/workout/${id}` ? <RxAvatar fontSize={30}/> : 'Привет' }
 					{isLoading ? <Loader /> : <span>{data?.email}</span>}
 				</h1>
 				{pathname !== '/new-exercise' ? (
 					pathname !== '/workouts/:id'
 				) : (
-					<p className={styles.inner}>Let’s start your day</p>
+					<p className={styles.inner}>Давайте начнем ваш день.</p>
 				)}
 			</div>
 

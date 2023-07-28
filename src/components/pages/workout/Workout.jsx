@@ -11,7 +11,6 @@ import { Fragment } from 'react'
 import ExerciseItem from './ExerciseItem'
 import Button from '../../ui/button/Button'
 
-
 const Workout = () => {
 	const { id } = useParams()
 
@@ -25,13 +24,17 @@ const Workout = () => {
 
 	const nav = useNavigate()
 
-	const {mutate} = useMutation(['Complete workout'], () => WorkoutLogService.complete(id), {
-		onSuccess(){
-			nav('/workouts')
+	const { mutate } = useMutation(
+		['Complete workout'],
+		() => WorkoutLogService.complete(id),
+		{
+			onSuccess() {
+				nav('/workouts')
+			}
 		}
-	}) 
+	)
 	return (
-		<Layout >
+		<Layout bgImage={'/bgList.jpeg'}>
 			<Information />
 			<HeaderWorkout isSuccess={isSuccess} workoutLog={workoutLog} />
 
@@ -51,8 +54,10 @@ const Workout = () => {
 						))}
 					</div>
 				)}
+			<div className={styles.btnButton}>
+				<Button clickHandler={() => mutate()}>Завершить тренировку</Button>
 			</div>
-			<Button clickHandler={() => mutate()}>Complete workout</Button>
+			</div>
 		</Layout>
 	)
 }

@@ -96,7 +96,7 @@ const NewExerciseForm = () => {
 					<div className='error'>{errors?.iconPath?.message}</div>
 				)}
 				<div className={styles.btn}>
-					<Button>Create</Button>
+					<Button>Создать</Button>
 				</div>
 			</form>
 		</div>

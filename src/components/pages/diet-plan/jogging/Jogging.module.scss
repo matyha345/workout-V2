@@ -1,0 +1,72 @@
+@import 'src/styles/variables';
+@import 'src/styles/mixins';
+
+
+.bgLink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+	margin-top: 10px;
+
+	.content {
+		.titleText {
+			text-align: center;
+			@include textTitle;
+			font-size: 16px;
+			border-radius: 5px 5px 50px 5px;
+			color: #e0f0ff;
+			backdrop-filter: blur(10px);
+		}
+
+		
+
+        .plan{
+            margin-top: 10px;
+            .planTitle{
+                text-align: center;
+                @include h1Title;
+                font-size: 20px;
+            }
+
+
+            .cardPlan{
+                display: flex;
+                padding: 20px;
+
+                .blokImg{
+                    
+                    img{
+                        border-radius: 5px;
+                    }
+                }
+
+                .text{
+                    margin-left: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+                    .blokTitle{
+                        @include h1Title;
+                    }
+                    .blokText{
+                        max-width: 320px;
+                        margin-top: 10px;
+                        @include textTitle;
+                        color: #C4C4C4;
+                    }
+                }
+            }
+
+            .bottomText{
+                text-align: center;
+                @include textTitle;
+                // color: $bgGlobal;
+                margin-bottom: 30px;
+            }
+        }
+	}
+}

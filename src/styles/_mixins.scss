@@ -6,3 +6,9 @@
 	font-weight: 600;
 	line-height: 120%;
 }
+@mixin textTitle {
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 120%;
+}

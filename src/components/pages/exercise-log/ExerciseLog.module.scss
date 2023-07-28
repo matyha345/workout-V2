@@ -18,6 +18,7 @@
 	}
 
 	.content {
+		margin-top: 30px;
 		> .row {
 			display: flex;
 			align-items: center;
@@ -37,10 +38,10 @@
 				> i,
 				> span,
 				> input {
-					font-size: 18px;
+					font-size: 14px;
 					color: $white;
 					@media (max-width: 450px) {
-						font-size: 16px;
+						font-size: 12px;
 					}
 				}
 
@@ -70,8 +71,8 @@
 
 				&:nth-child(2) {
 					width: 50%;
-					border-left: 1px solid rgba($colorText, 0.6);
-					border-right: 1px solid rgba($colorText, 0.6);
+					border-left: 2px solid rgba($colorText, 0.6);
+					border-right: 2px solid rgba($colorText, 0.6);
 					@media (max-width: $mobile) {
 						width: 40%;
 					}
@@ -79,8 +80,8 @@
 			}
 
 			&:first-child {
-				border-top: 1px solid rgba($colorText, 0.6);
-				border-bottom: 1px solid rgba($colorText, 0.6);
+				border-top: 2px solid rgba($colorText, 0.6);
+				border-bottom: 2px solid rgba($colorText, 0.6);
 				@media (max-width: 450px) {
 					> div > span {
 						font-size: 14px;

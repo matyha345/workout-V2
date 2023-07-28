@@ -9,7 +9,7 @@ const ListWorkouts = () => {
 	const { data, error, isLoading, isSuccess, isSuccessMutate, mutate } =
 		useWorkouts()
 	return (
-		<Layout bgImage={''} heading={'Workouts list'}>
+		<Layout  heading={'Список тренировок'}>
 
             <div className={styles.bgImages}>
                 <img src="listWork.jpg" alt="" />

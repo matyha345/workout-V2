@@ -1,36 +1,36 @@
 
 import svgOne from './svg/home.svg'
-import svgTwo from './svg/gym.svg'
-import svgFree from './svg/profile.svg'
-import svgFour from './svg/biita.svg'
-import svgSix from './svg/vsgFor.svg'
+import svgTwo from './svg/portfolio.svg'
+import svgFree from './svg/list.svg'
+import svgFour from './svg/biwps.svg'
+import svgFive from './svg/gira.svg'
 
 
 export const menu = [
 	{
-		title: 'Home',
-		link: '/',
+		title: '',
+		link: '/Home',
 		svg: svgOne
 	},
 	{
-		title: 'Workout',
-		link: '/workouts',
+		title: '',
+		link: '/profile',
 		svg: svgTwo
 	},
 	{
-		title: 'Profile',
-		link: '/profile',
+		title: '',
+		link: '/new-workouts',
 		svg: svgFour
 	},
 	{
-		title: 'New Workout',
-		link: '/new-workouts',
-		svg: svgSix
+		title: '',
+		link: '/new-exercise',
+		svg:  svgFive
 	},
 	{
-		title: 'New Exercise',
-		link: '/new-exercise',
-		svg:  svgFree
+		title: '',
+		link: '/workouts',
+		svg: svgFree
 	},
 	
 	

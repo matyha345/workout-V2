@@ -10,7 +10,7 @@ import { categoriesDataSlider } from '../../ui/swiper/swiper-data/categories.dat
 import { planDataSlider } from '../../ui/swiper/swiper-data/plan.data'
 
 import styles from './Home.module.scss'
-import LogoutHandler from '../../ui/logout-handler/LogoutHandler'
+
 
 const Home = () => {
 
@@ -21,7 +21,7 @@ const Home = () => {
 			<section className={styles.wrapper}>
 				<main className={styles.plan}>
 					<div className={styles.label}>
-						<h2 className={styles.title}>Today Workout Plan</h2>
+						<h2 className={styles.title}>План тренировок</h2>
 						<div className={styles.time}>6am-8am</div>
 					</div>
 					<div className={styles.planInner}>
@@ -42,8 +42,8 @@ const Home = () => {
 							spaceBetweenCol={9}
 						/>
 					</div>
-					<div className={styles.btn} onClick={() => nav('/new-workout')}>
-						<Button>Ne Wokr</Button>
+					<div className={styles.btn} onClick={() => nav('/new-workouts')}>
+						<Button>Новая тренировка</Button>
 					</div>
 				</main>
 			</section>

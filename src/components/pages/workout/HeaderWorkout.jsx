@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import styles from './Workout.module.scss'
-import {FiCornerUpLeft} from 'react-icons/fi'
+import {BiArrowBack} from 'react-icons/bi'
 
 const HeaderWorkout = ({ workoutLog, isSuccess }) => {
 	
@@ -9,7 +9,7 @@ const HeaderWorkout = ({ workoutLog, isSuccess }) => {
 	return (
 		<div className={styles.headerWrapper}>
 			<button onClick={() => nav('/workouts')}>
-			<FiCornerUpLeft fontSize={30}/>
+			<BiArrowBack fontSize={30}/>
 			</button>
 			<div className={styles.headerContent}>
 				{isSuccess && (
