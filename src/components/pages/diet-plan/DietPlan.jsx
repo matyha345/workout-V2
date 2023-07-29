@@ -1,5 +1,6 @@
-import FancyboxDetails from '../../ui/Fancybox/Fancybox'
 
+
+import FancyboxDetails from '../../ui/fancybox/FancyboxDetails'
 import styles from './DietPlan.module.scss'
 
 const DietPlan = ({
