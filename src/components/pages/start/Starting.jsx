@@ -10,10 +10,10 @@ const Starting = () => {
 		<Layout bgImage={'/startBG.jpg'}>
 			<section className={styles.wrapper}>
 				<div className={styles.content}>
-					<h2>Welcome to</h2>
-					<h1>BODY GOALS WORKOUT</h1>
-					<p>Achieve your body goals with us</p>
-					<Button clickHandler={() => nav('/auth')}>Get Started</Button>
+					<h2>Добро пожаловать</h2>
+					<h1>WORKOUT APP</h1>
+					<p>Достигните своих целей с нами</p>
+					<Button clickHandler={() => nav('/auth')}>Начнем</Button>
 				</div>
 			</section>
 		</Layout>

@@ -26,7 +26,7 @@ const Home = () => {
 						<SwiperElement
 							dataMap={categoriesDataSlider}
 							keyIndex={`_categor_`}
-							slidesPerViewCol={2.5}
+							slidesPerViewCol={3.2}
 							spaceBetweenCol={22}
 						/>
 					</div>

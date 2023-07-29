@@ -47,7 +47,7 @@
 			}
 	
 			&.completed {
-				background-color: $colorText;
+				background-color: darken($colorText, 15%)
 			}
 		}
 	}

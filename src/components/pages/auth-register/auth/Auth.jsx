@@ -11,10 +11,10 @@ const Auth = () => {
 		useAuthPage()
 
 	return (
-		<Layout heading='sing in' bgImage={'/authOne.jpg'}>
+		<Layout heading='Авторизация' bgImage={'/authOne.jpg'}>
 			<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.title}>
-					<h1>BODY GOALS WORKOUT</h1>
+					<h1>WORKOUT</h1>
 				</div>
 				{isLoading && <Loader />}
 				<Field
@@ -22,7 +22,7 @@ const Auth = () => {
 					name='email'
 					register={register}
 					options={{
-						required: 'Email is required'
+						required: 'Требуется указать электронную почту'
 					}}
 					type={'text'}
 					placeholder='Enter email'
@@ -32,19 +32,18 @@ const Auth = () => {
 					name='password'
 					register={register}
 					options={{
-						required: 'Password is required'
+						required: 'Пароль обязателен'
 					}}
 					type={'password'}
 					placeholder='Enter password'
 				/>
 
-				<div className={styles.wrapperButtons}> 
-				
-					<Button clickHandler={() => setType('login')}>Sing in</Button>
+				<div className={styles.wrapperButtons}>
+					<Button clickHandler={() => setType('login')}>Войти</Button>
 				</div>
-					
-				<button className={styles.btn}  onClick={() => nav('/reg')}>
-					Didn’t have any account? <span>Sign Up here</span>
+
+				<button className={styles.btn} onClick={() => nav('/reg')}>
+					У вас нет аккаунта? <span>Зарегистрируйтесь здесь</span>
 				</button>
 			</form>
 		</Layout>

@@ -12,10 +12,10 @@ const Register = () => {
 		useAuthPage()
 
 	return (
-		<Layout heading={'Sign Up'} bgImage={'/RegBg.jpg'}>
+		<Layout heading={'Зарегистрироваться'} bgImage={'/RegBg.jpg'}>
 			<form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
 				<div className={styles.title}>
-					<h1>BODY GOALS WORKOUT</h1>
+					<h1>WORKOUT</h1>
 				</div>
 				{isLoading && <Loader />}
 				<Field
@@ -23,7 +23,7 @@ const Register = () => {
 					name='email'
 					register={register}
 					options={{
-						required: 'Email is required'
+						required: 'Требуется указать электронную почту'
 					}}
 					type={'text'}
 					placeholder='Enter email'
@@ -33,18 +33,18 @@ const Register = () => {
 					name='password'
 					register={register}
 					options={{
-						required: 'Password is required'
+						required: 'Пароль обязателен'
 					}}
 					type='password'
 					placeholder='Enter password'
 				/>
 
 				<div className={styles.wrapperButtons}>
-					<Button clickHandler={() => setType('register')}>Sign up</Button>
+					<Button clickHandler={() => setType('register')}>Зарегистрироваться</Button>
 				</div>
 
 				<button className={styles.btn} onClick={() => nav('/auth')}>
-					If you have an account? <span>Sign In here</span>
+				Если у вас уже есть аккаунт? <span>Войдите здесь </span>
 				</button>
 			</form>
 		</Layout>
