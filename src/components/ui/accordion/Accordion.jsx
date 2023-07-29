@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import styles from './accordion.module.scss'
+import styles from './Accordion.module.scss'
 import AccordionSection from './AccordionSection'
 
 const Accordion = ({ sections }) => {
