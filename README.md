@@ -1,63 +1,52 @@
 
 
 <h1 align="center">Workout App v2</h1>
+<div display="flex" justify-content="center" >
+<img src="./public/wApp.svg" alt="Alt Text" width="80" height="80">
+</div>
 
-<img align="center" src="./public/wApp.svg" alt="Alt Text" width="80" height="80">
-
-<h2 align="center" color="red">Добро пожаловать в репозиторий Workout App v2!</h2>
+<h2>Добро пожаловать в репозиторий Workout App v2</h2>
 
 
 Описание:
-<span style="color: #fff50a;">Workout App v2 - это вторая версия данного приложения, предназначенного для помощи вам в поддержании здорового образа жизни и достижении ваших фитнес-целей.</span>
+<p style="color: #fff50a;">Workout App v2 - это вторая версия данного приложения, предназначенного для помощи вам в поддержании здорового образа жизни и достижении ваших фитнес-целей.</p> 
 
+*Этот проект является клиентской частью приложения Workout.*
 
+ [Cсылка на workout-App](http://1604079-cd56949.twc1.net/home)
 
 Основные зависимости:
-
-Fancyapps UI - Версия ^5.0.20
-Tanstack React Query - Версия ^4.32.0
-Axios - Версия ^1.4.0
-Clsx - Версия ^2.0.0
-History - Версия ^5.3.0
-Include Media - Версия ^2.0.0
-JS Cookie - Версия ^3.0.5
-React - Версия ^18.2.0
-React DOM - Версия ^18.2.0
-React Hook Form - Версия ^7.45.2
-React Icons - Версия ^4.10.1
-React Router DOM - Версия ^6.14.2
-React Select - Версия ^5.7.4
-Sass - Версия ^1.63.6
-Swiper - Версия ^10.0.4
+* Fancyapps UI 
+* Tanstack React Query 
+* Axios 
+* Clsx 
+* History 
+* Include Media 
+* JS Cookie 
+* React 
+* React DOM 
+* React Hook Form 
+* React Icons 
+* React Router DOM 
+* React Select 
+* Sass 
+* Swiper -
 
 
 Зависимости разработки:
+* @types/react
+* @types/react-dom  
+* @vitejs/plugin-react
+* ESLint - Версия
+* ESLint Plugin React 
+* ESLint Plugin React Hooks 
+* ESLint Plugin React Refresh 
+* Prettier 
+* Vite 
 
-@types/react - Версия ^18.2.14
-@types/react-dom - Версия ^18.2.6
-@vitejs/plugin-react - Версия ^4.0.1
-ESLint - Версия ^8.44.0
-ESLint Plugin React - Версия ^7.32.2
-ESLint Plugin React Hooks - Версия ^4.6.0
-ESLint Plugin React Refresh - Версия ^0.4.1
-Prettier - Версия 3.0.0
-Vite - Версия ^4.4.0
-Установка:
+Автор:
+* Имя: Nikolay Matyukhin
+* <a href="https://telegram.im/@Muchakhos">Telegram</a>
+* Электронная почта: matyha345@gmail.com
 
-Убедитесь, что у вас установлен Node.js.
-Склонируйте репозиторий: git clone https://github.com/ваш-пользователь/workout-app-v2.git
-Перейдите в директорию проекта: cd workout-app-v2
-Установите зависимости: npm install
-Скрипты:
-
-npm run dev - Запуск приложения в режиме разработки с использованием Vite.
-npm run build - Сборка проекта с помощью Vite.
-npm run preview - Предварительный просмотр собранного проекта с помощью Vite.
-Если вы заинтересованы внести свой вклад в развитие Workout App v2, не стесняйтесь клонировать репозиторий и создавать Pull Request'ы. Мы с нетерпением ждем вашего участия!
-
-
-Автор
-Имя: Nikolay_Matyukhin_matyha345
-Электронная почта: matyha345@gmail.com
-
-<img src="./public/preview.png" alt="Alt Text" width="150" height="auto">
+<img src="./public/preview.png" alt="Alt img" width="250" height="auto">
