@@ -30,14 +30,14 @@
 * React Router DOM 
 * React Select 
 * Sass 
-* Swiper -
+* Swiper 
 
 
 Зависимости разработки:
 * @types/react
 * @types/react-dom  
 * @vitejs/plugin-react
-* ESLint - Версия
+* ESLint 
 * ESLint Plugin React 
 * ESLint Plugin React Hooks 
 * ESLint Plugin React Refresh 
