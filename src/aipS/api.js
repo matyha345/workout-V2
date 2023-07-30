@@ -13,3 +13,12 @@ export const $axios = axios.create({
 			: 'AA Errors'
 	}
 })
+$axios.interceptors.request.use(config => {
+	const token = Cookies.get(TOKEN)
+	if (token) {
+		config.headers['Authorization'] = `Bearer ${token}`
+	} else {
+		//еще :))
+	}
+	return config
+})
