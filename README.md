@@ -1,7 +1,7 @@
 Workout App v2
 <img src="./public/wApp.svg" alt="Alt Text" width="80" height="80">
 
-<h1 color="#fff50a">Добро пожаловать в репозиторий Workout App v2!</h1>
+<h1 color="red">Добро пожаловать в репозиторий Workout App v2!</h1>
 
 
 Описание:
@@ -56,4 +56,4 @@ npm run preview - Предварительный просмотр собранн
 Имя: Nikolay_Matyukhin_matyha345
 Электронная почта: matyha345@gmail.com
 
-<img src="./public/preview.png" alt="Alt Text" width="317" height="140">
+<img src="./public/preview.png" alt="Alt Text" width="150" height="317">
