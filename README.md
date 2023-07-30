@@ -1,6 +1,6 @@
 Workout App v2
 
-![Alt Text](/preview.png)
+![Alt Text](./public/preview.png)
 
 Добро пожаловать в репозиторий Workout App v2! ![Alt Text](/wApp.svg)
 
