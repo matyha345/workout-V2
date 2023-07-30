@@ -13,7 +13,7 @@
 
 *Этот проект является клиентской частью приложения Workout.*
 
- [Cсылка на workout-App](http://1604079-cd56949.twc1.net/home)
+ [Cсылка на workout-App](http://1604079-cd56949.twc1.net/Home)
 
 Основные зависимости:
 * Fancyapps UI 
