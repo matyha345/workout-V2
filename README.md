@@ -45,7 +45,7 @@
 * Vite 
 
 Автор:
-* Имя: Nikolay Matyukhin
+* Имя: Nikolai Matiukhin
 * <a href="https://telegram.im/@Muchakhos">Telegram</a>
 * Электронная почта: matyha345@gmail.com
 
