@@ -21,6 +21,7 @@ const ExerciseItem = ({ exerciseLog }) => {
 				<img
 					src={import.meta.env.VITE_SERVER_URL + exerciseLog.exercise.iconPath}
 					height='34'
+					width='34'
 					alt=''
 					draggable={false}
 				/>

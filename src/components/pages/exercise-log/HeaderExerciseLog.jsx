@@ -11,6 +11,7 @@ const HeaderExerciseLog = ({ isSuccess, exerciseLog }) => {
 							import.meta.env.VITE_SERVER_URL + exerciseLog.exercise.iconPath
 						}
 						height='34'
+						width='35'
 						alt=''
 						draggable={false}
 					/>
