@@ -10,34 +10,45 @@
 	}
 }
 .wrapper {
-	> div.item {
-		margin: 0 auto;
-		margin-bottom: 30px;
-		background-color: $purple;
-		color: $white;
-		width: 90%;
-		border-radius: 10px;
 
-		> button,
-		> a {
-			padding: 14px 20px;
-			font-size: 20px;
-			color: $white;
-			text-decoration: none;
-			justify-content: space-between;
+	.wrapperInner{
+		display: flex;
+		align-items: center;
+		.item {
 			display: flex;
-			align-items: center;
-			background-color: transparent;
-			border: none;
-			cursor: pointer;
-			width: 100%;
-			@media (max-width: 450px) {
-				font-size: 18px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			background-color: $purple;
+			color: $white;
+			width: 90%;
+			border-radius: 10px;
+	
+			.btnOne{
+				padding: 14px 20px;
+				font-size: 20px;
+				color: $white;
+				text-decoration: none;
+				justify-content: space-between;
+				display: flex;
+				align-items: center;
+				background-color: transparent;
+				border: none;
+				cursor: pointer;
+				width: 100%;
+				@media (max-width: 450px) {
+					font-size: 18px;
+				}
 			}
-		}
 
-		&.completed {
-			background-color: $colorText;
+			> button{
+				padding: 0 30px;
+				background-color: $gray;
+				border-radius: 10px;
+			}
+	
+			&.completed {
+				background-color: $colorText;
+			}
 		}
 	}
 }

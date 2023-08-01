@@ -1,0 +1,39 @@
+
+@import 'src/styles/mixins.scss';
+
+.notFound{
+    display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	border-radius: 15px;
+
+	height: 100%;
+	max-width: 560px;
+	width: 100%;
+
+	padding: 25px;
+	margin: 0 auto;
+
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+    .wrapperInner{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+        .title{
+            margin-bottom: 50px;
+            @include h1Title;
+            text-transform: uppercase;
+            backdrop-filter: blur(10px);
+            font-size: 50px;
+            color: #C4C4C4;
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+}

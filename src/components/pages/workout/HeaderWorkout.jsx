@@ -9,7 +9,7 @@ const HeaderWorkout = ({ workoutLog, isSuccess }) => {
 	return (
 		<div className={styles.headerWrapper}>
 			<button onClick={() => nav('/workouts')}>
-			<BiArrowBack fontSize={30}/>
+			<BiArrowBack fontSize={30}/>	
 			</button>
 			<div className={styles.headerContent}>
 				{isSuccess && (

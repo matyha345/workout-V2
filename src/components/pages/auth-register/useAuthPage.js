@@ -52,7 +52,8 @@ export const useAuthPage = () => {
 			errors,
 			isLoading,
 			onSubmit,
-            nav
+            nav,
+			isAuth
 		}),
 		[errors, isLoading]
 	)
