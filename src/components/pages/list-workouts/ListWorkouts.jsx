@@ -4,7 +4,7 @@ import Loader from '../../ui/loader/Loader'
 import WorkoutItem from './WorkoutItem'
 import { useWorkouts } from './hooks/useWorkouts'
 import styles from './ListWorkouts.module.scss'
-import { useDeleteWorkout } from './hooks/useRemove'
+import { useDeleteWorkout } from './hooks/useDeleteWorkout'
 
 const ListWorkouts = () => {
 	const { data, error, isLoading, isSuccess, isSuccessMutate, mutate } =
