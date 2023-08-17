@@ -24,7 +24,7 @@ const ExerciseLog = () => {
 	} = useExerciseLog()
 
 	return (
-		<Layout bgImage={'/bgList2.jpeg'}>
+		<Layout customStyle={{ height: 'auto' }} bgImage={'/bgList2.jpeg'}>
 			<Information />
 			<div className={styles.wrapper}>
 				<button
