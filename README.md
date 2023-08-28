@@ -5,7 +5,7 @@
 <img src="./public/wApp.svg" alt="Alt Text" width="80" height="80">
 </div>
 
-<h2>Добро пожаловать в рипозиторий Workout App v2</h2>
+<h2>Добро пожаловать в репозиторий Workout App v2</h2>
 
 
 Описание:
